@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.IO;
@@ -10,9 +10,9 @@ using System.Web;
 
 public static class Email
 {
-    static MailAddress fromAddress = new MailAddress("automated.script@pgworks.com", "Automated Script");
-    static SmtpClient smtpClient = new SmtpClient("endeavor.pgworks.com", 25);
-    static MailAddress replayToAddress = new MailAddress("dustin.huinh@pgworks.com", "Dustin Huinh");
+    static MailAddress fromAddress = new MailAddress("script@server.com", "Automated Script");
+    static SmtpClient smtpClient = new SmtpClient("server@server.com", 25);
+    static MailAddress replayToAddress = new MailAddress("email@domain.com", "Sender Name");
 
     public static bool SendEmailToAddress(string toAddress, string emailSubject, string emailBody)
     {
