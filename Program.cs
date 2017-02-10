@@ -97,7 +97,7 @@ namespace DriverLicenseProcessing
             return filePath;
         }
 
-        // Sends formatted .txt file as an email attachment to dustin.huinh@pgworks.com
+        // Sends formatted .txt file as an email attachment to email.address@domain.com
         private static bool SendFileAsEmailAttachment(string filePath)
         {
             string toAddress = "email.address@domain.com";
