@@ -74,7 +74,7 @@ namespace DriverLicenseProcessing
             return driverRecords;
         }
 
-        // Writes properly formatted DriverRecord text data to a .txt file in S:\Tech Strategy & Support\Development Team\Documents\DriversLicences\
+        // Writes properly formatted DriverRecord text data to a .txt file in network share directory
         private static string WriteDriverRecordsToFile(List<DriverRecord> driverRecords)
         {
             string fileDirectory = String.Format(@"\\SomeServer\SomeDirectory", DateTime.Today.ToString("MMMM yyyy"));
